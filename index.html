@@ -33,8 +33,24 @@ table {border-collapse: collapse !important;}
 *[class].font27{ font-size: 27px !important; font-weight:normal !important; line-height:27px !important; }
   
 /* width and heights */
+/* width and heights */
 *[class].hX{ height:Xpx !important; }
-*[class].wX{ width:Xpx !important; }
+*[class].w380{ width:380px !important; }
+*[class].w360{ width:360px !important; }
+*[class].w175{ width:175px !important; }
+*[class].w350{ width:350px !important; }
+*[class].w320{ width:320px !important; }
+*[class].w265{ width:265px !important; }
+*[class].w100{ width:100% !important; }
+*[class].margin{ margin: 0 auto !important; }
+
+
+*[class].espacio{ width:350px !important; height: 20px !important;}
+
+}
+
+@media only screen and (max-width: 380px) { 
+  *[class].w380{ width: 100% !important; height: auto !important;}
 }
 </style>
 </head>
@@ -52,12 +68,12 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
     <tr>
       <td align="center" valign="top">
         <!-- Header -->
-        <table width="650px" height="40px" border="0" cellpadding="0" cellspacing="0" bgcolor="#262626">
+        <table width="650px" height="40px" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#262626" class="w100">
           <tr>
             <td>
-                <table width="500px" border="0" cellpadding="0" cellspacing="0" align="center">
+                <table width="500px" border="0" cellpadding="0" cellspacing="0" align="center" class="w380">
                   <tr>
-                    <td align="center" style="font-family: 'PT Sans', sans-serif; font-size:14px; color:#ffffff; line-height:16px;">
+                    <td align="center" class="w380" style="font-family: 'PT Sans', sans-serif; font-size:14px; color:#ffffff; line-height:16px;">
                        <span style="font-weight: 700">Hola *|FNAME|*</span>, Haz recibido este email porque te suscribiste al portal web de La Opinión
                     </td>
                   </tr>
@@ -68,7 +84,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Fin header -->
 
         <!-- Espacio -->
-        <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+        <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" class="w380">
           <tr>
             <td class="w380">
               <img src="img/spacer.gif" height="28">
@@ -78,15 +94,15 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Fin espacio -->
                 
         <!-- Logo -->
-        <table width="195px" align="center" border="0" cellpadding="0" cellspacing="0">
+        <table width="195px" align="center" border="0" cellpadding="0" cellspacing="0" class="w380">
           <tr>
-            <td><img src="img/logo.png" alt="logo-op" /></td>
+            <td class="w380 textcenter"><img src="img/logo.png" alt="logo-op" /></td>
           </tr>
         </table>
         <!-- Fin logo -->
 
         <!-- Espacio -->
-        <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+        <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" class="w380">
           <tr>
             <td class="w380">
               <img src="img/spacer.gif" height="15">
@@ -96,15 +112,15 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Fin espacio -->
 
         <!-- Fecha -->
-        <table width="195px" align="center" border="0" cellpadding="0" cellspacing="0">
+        <table width="195px" align="center" border="0" cellpadding="0" cellspacing="0" class="w380">
           <tr>            
-            <td style="text-align: center; font-family: 'PT Sans', sans-serif; font-size: 16px;" id="fechaActual"></td>
+            <td class="w380" style="text-align: center; font-family: 'PT Sans', sans-serif; font-size: 16px;" id="fechaActual"></td>
           </tr>
         </table>
         <!-- Fin fecha -->
 
         <!-- Espacio -->
-        <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+        <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
               <img src="img/spacer.gif" height="25">
@@ -114,19 +130,19 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Fin espacio -->
         
         <!-- Nota principal -->
-        <table width="553" height="269" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
+        <table width="553" align="center" height="269" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
           <tr>
-            <td>
+            <td class="hide">
               <img src="img/spacer.gif" width="14" height="269">
             </td>
-            <td>
+            <td class="blockwrap textcenter w380">
               <img src="img/prueba.jpg" alt="img-principal" />
             </td>
-            <td>
-              <img src="img/spacer.gif" width="26" height="269">
+            <td class="blockwrap w380">
+              <img src="img/spacer.gif" width="26" height="269" class="espacio">
             </td>
-            <td>
-              <table width="230" height="225" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+            <td class="blockwrap w380">
+              <table width="230" height="225" cellpadding="0" cellspacing="0" cellmargin="0" align="center">
                 <tr>
                   <td>
                     <span class="color" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
@@ -167,15 +183,15 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                 </tr>
               </table>
             </td>
-            <td>
-              <img src="img/spacer.gif" width="24" height="269">
+            <td class="blockwrap w380">
+              <img src="img/spacer.gif" width="24" height="269" class="espacio">
             </td>
           </tr>
         </table>
         <!-- Fin noticia principal -->
 
         <!-- Espacio -->
-        <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+        <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
               <img src="img/spacer.gif" height="23">
@@ -187,15 +203,15 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Pautas -->
         <table width="610" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" align="center">
           <tr>
-            <td>
+            <td class="w380 blockwrap textcenter">
               <div class="pauta">
                  <a href="http://www.deleitese.co/recomendados" target="_blank"><img width="300" height="300" src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/9b081966-419c-4d54-8ea0-3e61e0529198.gif" alt="pauta"></a>
               </div>
             </td>
-            <td>
+            <td class="blockwrap">
               <img src="img/spacer.gif" width="10">
             </td>
-            <td>
+            <td class="w380 blockwrap textcenter">
               <div class="pauta">
                  <a href="http://www.deleitese.co/recomendados" target="_blank"><img width="300" height="300" src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/9b081966-419c-4d54-8ea0-3e61e0529198.gif" alt="pauta"></a>
               </div>
@@ -205,7 +221,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Fin pautas -->
 
         <!-- Espacio -->
-        <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+        <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
               <img src="img/spacer.gif" height="25">
@@ -215,53 +231,53 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Fin espacio -->
         
         <!-- Notas  -->
-        <table width="553" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+        <table width="553" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <!-- Inicio left -->
-            <td width="268" align="center">
-              <table border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
+            <td width="268" align="center" class="blockwrap w380">
+              <table border="0" align="center" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
                 <tr>
-                  <td>
+                  <td class="textcenter w380">
                     <img src="img/pruebaNota.jpg" alt="img-nota" />
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="w380">
                     <img src="img/spacer.gif" width="268" height="8">
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <table width="268" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
+                  <td class="w320" align="center">
+                    <table width="268" align="center" class="blockwrap w320" border="0" cellpadding="0" cellspacing="0"  cellmargin="0" bgcolor="#ffffff">
                       <tr>
-                        <td>
+                        <!-- <td class="hide">
                           <img src="img/spacer.gif" width="20">
-                        </td>
-                        <td>
-                          <table width="230" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+                        </td> -->
+                        <td class="blockwrap w320">
+                          <table width="230" align="center" border="0" cellpadding="0" cellspacing="0" class="blockwrap w320" cellmargin="0">
                             <tr>
-                              <td>
+                              <td class="blockwrap w320">
                                 <span class="color" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
                                 <span class="seccion" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                  <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">
+                              <td class="blockwrap w320" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">
                                 <span>Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                  <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="blockwrap w320">
                                 <span class="texto">
                                   En una acera de Nueva Jersey, Estados Unidos, una mujer que camina tranquilamente por la calle Somerset en Plainfield
                                 </span>
@@ -273,7 +289,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                               </td>
                             </tr>
                             <tr>
-                              <td bgcolor="#b92025" height="33" align="center">
+                              <td class="w320" bgcolor="#b92025" height="33" align="center">
                                 <a href="" style="color:#ffffff; text-decoration:none;"> <span style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; padding: 7px 60px;">Ver noticia</span></a>
                               </td>
                             </tr>
@@ -292,67 +308,67 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
             </td>
             <!-- Fin left -->
 
-            <td class="w380">
+            <td class="w380 blockwrap">
               <img src="img/spacer.gif" width="20">
             </td>
 
             <!-- Inicio right -->
-            <td width="268" align="center">
-              <table border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
+            <td width="268" class="blockwrap w380" align="center">
+              <table border="0" align="center" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
                 <tr>
-                  <td>
+                  <td class="textcenter w380">
                     <img src="img/pruebaNota.jpg" alt="img-nota" />
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="w380">
                     <img src="img/spacer.gif" width="268" height="8">
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <table width="268" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
+                  <td class="w320">
+                    <table width="268" align="center" border="0" cellpadding="0" cellspacing="0" class="w320" cellmargin="0" bgcolor="#ffffff">
                       <tr>
-                        <td>
+                        <!-- <td class="hide">
                           <img src="img/spacer.gif" width="20">
-                        </td>
+                        </td> -->
                         <td>
-                          <table width="230" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+                          <table width="230" align="center" border="0" cellpadding="0" cellspacing="0" class="w320" cellmargin="0">
                             <tr>
-                              <td>
+                              <td class="w320">
                                 <span class="color" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
                                 <span class="seccion" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                  <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">
+                              <td class="w320" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">
                                 <span>Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                  <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w320">
                                 <span class="texto">
                                   En una acera de Nueva Jersey, Estados Unidos, una mujer que camina tranquilamente por la calle Somerset en Plainfield
                                 </span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                 <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td bgcolor="#b92025" height="33" align="center">
+                              <td class="w320" bgcolor="#b92025" height="33" align="center">
                                 <a href="" style="color:#ffffff; text-decoration:none;"> <span style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; padding: 7px 60px;">Ver noticia</span></a>
                               </td>
                             </tr>
@@ -384,54 +400,54 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         </table>
         <!-- Fin espacio -->
 
-        <!-- Notas  -->
-        <table width="553" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+        <!-- Notas  Segundo bloque -->
+        <table width="553" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <!-- Inicio left -->
-            <td width="268" align="center">
-              <table border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
+            <td width="268" align="center" class="blockwrap w380">
+              <table border="0" align="center" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
                 <tr>
-                  <td>
+                  <td class="textcenter w380">
                     <img src="img/pruebaNota.jpg" alt="img-nota" />
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="w380">
                     <img src="img/spacer.gif" width="268" height="8">
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <table width="268" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
+                  <td class="w320" align="center">
+                    <table width="268" align="center" class="blockwrap w320" border="0" cellpadding="0" cellspacing="0"  cellmargin="0" bgcolor="#ffffff">
                       <tr>
-                        <td>
+                       <!--  <td class="hide">
                           <img src="img/spacer.gif" width="20">
-                        </td>
-                        <td>
-                          <table width="230" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+                        </td> -->
+                        <td class="blockwrap w320">
+                          <table width="230" align="center" border="0" cellpadding="0" cellspacing="0" class="blockwrap w320" cellmargin="0">
                             <tr>
-                              <td>
+                              <td class="blockwrap w320">
                                 <span class="color" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
                                 <span class="seccion" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                  <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">
+                              <td class="blockwrap w320" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">
                                 <span>Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                  <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="blockwrap w320">
                                 <span class="texto">
                                   En una acera de Nueva Jersey, Estados Unidos, una mujer que camina tranquilamente por la calle Somerset en Plainfield
                                 </span>
@@ -443,7 +459,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                               </td>
                             </tr>
                             <tr>
-                              <td bgcolor="#b92025" height="33" align="center">
+                              <td class="w320" bgcolor="#b92025" height="33" align="center">
                                 <a href="" style="color:#ffffff; text-decoration:none;"> <span style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; padding: 7px 60px;">Ver noticia</span></a>
                               </td>
                             </tr>
@@ -462,67 +478,67 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
             </td>
             <!-- Fin left -->
 
-            <td class="w380">
+            <td class="w380 blockwrap">
               <img src="img/spacer.gif" width="20">
             </td>
 
             <!-- Inicio right -->
-            <td width="268" align="center">
-              <table border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
+            <td width="268" class="blockwrap w380" align="center">
+              <table border="0" align="center" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
                 <tr>
-                  <td>
+                  <td class="textcenter w380">
                     <img src="img/pruebaNota.jpg" alt="img-nota" />
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="w380">
                     <img src="img/spacer.gif" width="268" height="8">
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <table width="268" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
+                  <td class="w320">
+                    <table width="268" align="center" border="0" cellpadding="0" cellspacing="0" class="w320" cellmargin="0" bgcolor="#ffffff">
                       <tr>
-                        <td>
+                        <!-- <td class="hide">
                           <img src="img/spacer.gif" width="20">
-                        </td>
+                        </td> -->
                         <td>
-                          <table width="230" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+                          <table width="230" align="center" border="0" cellpadding="0" cellspacing="0" class="w320" cellmargin="0">
                             <tr>
-                              <td>
+                              <td class="w320">
                                 <span class="color" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
                                 <span class="seccion" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                  <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">
+                              <td class="w320" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">
                                 <span>Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                  <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w320">
                                 <span class="texto">
                                   En una acera de Nueva Jersey, Estados Unidos, una mujer que camina tranquilamente por la calle Somerset en Plainfield
                                 </span>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w380">
                                 <img src="img/spacer.gif" height="15">
                               </td>
                             </tr>
                             <tr>
-                              <td bgcolor="#b92025" height="33" align="center">
+                              <td class="w320" bgcolor="#b92025" height="33" align="center">
                                 <a href="" style="color:#ffffff; text-decoration:none;"> <span style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; padding: 7px 60px;">Ver noticia</span></a>
                               </td>
                             </tr>
@@ -555,11 +571,11 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Fin espacio -->
 
         <!-- Notas Galeria -->
-        <table width="553" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+        <table width="553" align="center" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
           <tr>
             <!-- Inicio left -->
-            <td width="265" height="345" align="left" style="background: url(img/pruebaGaleria.jpg) no-repeat; position: relative;">
-              <table border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+            <td align="center" class="blockwrap w265" width="265" height="345" align="left" style="background: url(img/pruebaGaleria.jpg) no-repeat; position: relative;">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
                 <tr>
                   <td>
                     <a href="/noticia">
@@ -571,16 +587,16 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                 </tr>
 
                 <tr>
-                  <td>
-                    <table width="265" height="90" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" style="position: absolute; bottom: 0; -webkit-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); -moz-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75);">
+                  <td class="w265">
+                    <table class="w265" align="center" width="265" height="90" border="0" cellpadding="0" cellspacing="0" cellmargin="0" style="position: absolute; bottom: 0; left: 0; -webkit-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); -moz-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75);">
                       <tr>
-                        <td>
+                        <td class="hide">
                           <img src="img/spacer.gif" width="20">
                         </td>
-                        <td>
-                          <table width="230" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+                        <td class="w265">
+                          <table align="center" width="230" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
                             <tr>
-                              <td>
+                              <td class="w265">
                                 <span class="color" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
                                 <a href="/seccion" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">
                                   <span class="seccion" >Judicial</span>
@@ -588,19 +604,19 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w265">
                                 <img src="img/spacer.gif" height="8">
                               </td>
                             </tr>
                             <tr>
-                              <td style="">
+                              <td class="w265">
                                 <a href="/noticia" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #ffffff;">
                                   <span>Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                                 </a>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w265">
                                 <img src="img/spacer.gif" height="20">
                               </td>
                             </tr>
@@ -614,16 +630,16 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
             </td>
             <!-- Fin left -->
 
-            <td>
+            <td class="blockwrap w265">
               <img src="img/spacer.gif" width="20">
             </td>
 
              <!-- Inicio Right -->
-            <td width="265" height="345" align="left" style="background: url(img/pruebaGaleria.jpg) no-repeat; position: relative;">
-              <table border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+            <td align="center" class="blockwrap w265" width="265" height="345" align="left" style="background: url(img/pruebaGaleria.jpg) no-repeat; position: relative;">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
                 <tr>
                   <td>
-                    <a href="/noticia-2">
+                    <a href="/noticia">
                       <div class="logo" style="position: absolute;position: absolute;top: 100px;left: 0;right: 0;width: 63px; margin: 0 auto;">
                         <img src="img/video.png" alt="video" />
                       </div>
@@ -632,16 +648,16 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                 </tr>
 
                 <tr>
-                  <td>
-                    <table width="265" height="90" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" style="position: absolute; bottom: 0; -webkit-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); -moz-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75);">
+                  <td class="w265">
+                    <table class="w265" align="center" width="265" height="90" border="0" cellpadding="0" cellspacing="0" cellmargin="0" style="position: absolute; bottom: 0; left: 0; -webkit-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); -moz-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75);">
                       <tr>
-                        <td>
+                        <td class="hide">
                           <img src="img/spacer.gif" width="20">
                         </td>
-                        <td>
-                          <table width="230" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
+                        <td class="w265">
+                          <table align="center" width="230" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
                             <tr>
-                              <td>
+                              <td class="w265">
                                 <span class="color" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
                                 <a href="/seccion" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">
                                   <span class="seccion" >Judicial</span>
@@ -649,19 +665,19 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w265">
                                 <img src="img/spacer.gif" height="8">
                               </td>
                             </tr>
                             <tr>
-                              <td>
-                                <a href="/noticia-2" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #ffffff;">
+                              <td class="w265">
+                                <a href="/noticia" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #ffffff;">
                                   <span>Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                                 </a>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td class="w265">
                                 <img src="img/spacer.gif" height="20">
                               </td>
                             </tr>
@@ -691,15 +707,15 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Pautas -->
         <table width="610" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" align="center">
           <tr>
-            <td>
+            <td class="w380 blockwrap textcenter">
               <div class="pauta">
                  <a href="http://www.deleitese.co/recomendados" target="_blank"><img width="300" height="300" src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/9b081966-419c-4d54-8ea0-3e61e0529198.gif" alt="pauta"></a>
               </div>
             </td>
-            <td>
+            <td class="blockwrap">
               <img src="img/spacer.gif" width="10">
             </td>
-            <td>
+            <td class="w380 blockwrap textcenter">
               <div class="pauta">
                  <a href="http://www.deleitese.co/recomendados" target="_blank"><img width="300" height="300" src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/9b081966-419c-4d54-8ea0-3e61e0529198.gif" alt="pauta"></a>
               </div>
@@ -719,18 +735,18 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Fin espacio -->
         
         <!-- Footer  -->
-        <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#262626">
+        <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w100" cellmargin="0" bgcolor="#262626">
           <tr>
             <td>
               <img src="img/spacer.gif" height="30">
             </td>
           </tr>
           <tr>
-            <td>
+            <td class="hide">
               <img src="img/spacer.gif" width="110">
             </td>
-            <td>
-              <table width="325" align="center">
+            <td class="blockwrap w380 margin textcenter" align="center">
+              <table width="325" class="w380" align="center">
                 <tr>
                   <td>
                     <a href="https://www.laopinion.com.co" target="_blank">
@@ -767,15 +783,27 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                 </tr>
               </table>
             </td>
-            <td>
-              <table width="325" align="left">
+
+            <td class="blockwrap w265 margin" align="center">
+              <table class="w265" width="325" align="left">
                 <tr>
+                  <td width="40">
+                    <img src="img/redes.png" alt="redes" />
+                  </td>
                   <td>
-                    <ul>
-                      <li>Facebook</li>
-                      <li>Twitter</li>
-                      <li>Instagram</li>
-                      <li>Youtube</li>
+                    <ul style="list-style: none; padding: 0;">
+                      <li style="margin-bottom: 18px">
+                        <a href="https://www.facebook.com/laopinioncucuta/" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">laopinioncucuta</a>
+                      </li>
+                      <li style="margin-bottom: 18px">
+                        <a href="https://www.twitter.com/laopinioncucuta/" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">@laopinioncucuta</a>
+                      </li>
+                      <li style="margin-bottom: 18px">
+                        <a href="https://www.instagram.com/laopinioncucuta/" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">@laopinioncucuta</a>
+                      </li>
+                      <li style="margin-bottom: 18px">
+                        <a href="https://www.youtube.com/user/WEBLAOPINION" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">laopinioncucuta</a>
+                      </li>
                     </ul>
                   </td>
                 </tr>
