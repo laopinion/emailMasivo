@@ -17,6 +17,7 @@ table {border-collapse: collapse !important;}
 .ExternalClass { width: 100%; }
 .ExternalClass * { line-height: 100%; }
 .ios_geo a { color:#1c1c1c !important; text-decoration:none !important; }
+.hideDesktop{ display:none !important; display:none;}
 /* responsive styles */
 @media only screen and (max-width: 600px) { 
 /* global styles */
@@ -39,18 +40,19 @@ table {border-collapse: collapse !important;}
 *[class].w360{ width:360px !important; }
 *[class].w175{ width:175px !important; }
 *[class].w350{ width:350px !important; }
-*[class].w320{ width:320px !important; }
+*[class].w320{ width:268px !important; }
 *[class].w265{ width:265px !important; }
 *[class].w100{ width:100% !important; }
-*[class].margin{ margin: 0 auto !important; }
+/**[class].margin{ margin: 0 auto !important; }*/
 
 
 *[class].espacio{ width:350px !important; height: 20px !important;}
+*[class].padding{ padding-left: 5px !important; }
 
 }
 
 @media only screen and (max-width: 380px) { 
-  *[class].w380{ width: 100% !important; height: auto !important;}
+  *[class].w380{ width: 100% !important; }
 }
 </style>
 </head>
@@ -87,7 +89,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" class="w380">
           <tr>
             <td class="w380">
-              <img src="img/spacer.gif" height="28">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="28">
             </td>
           </tr>
         </table>
@@ -96,7 +98,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Logo -->
         <table width="195px" align="center" border="0" cellpadding="0" cellspacing="0" class="w380">
           <tr>
-            <td class="w380 textcenter"><img src="img/logo.png" alt="logo-op" /></td>
+            <td class="w380 textcenter"><img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/94261389-2add-4fc1-bdad-bf0dd959199b.png" alt="logo-op" /></td>
           </tr>
         </table>
         <!-- Fin logo -->
@@ -105,7 +107,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" class="w380">
           <tr>
             <td class="w380">
-              <img src="img/spacer.gif" height="15">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
             </td>
           </tr>
         </table>
@@ -114,7 +116,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <!-- Fecha -->
         <table width="195px" align="center" border="0" cellpadding="0" cellspacing="0" class="w380">
           <tr>            
-            <td class="w380" style="text-align: center; font-family: 'PT Sans', sans-serif; font-size: 16px;" id="fechaActual"></td>
+            <td class="w380" style="text-align: center; font-family: 'PT Sans', sans-serif; font-size: 16px; color: #333333;" id="fechaActual"></td>
           </tr>
         </table>
         <!-- Fin fecha -->
@@ -123,7 +125,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
-              <img src="img/spacer.gif" height="25">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="25">
             </td>
           </tr>
         </table>
@@ -133,47 +135,50 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="553" id="notaPrincipal" align="center" height="269" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
           <tr>
             <td class="hide">
-              <img src="img/spacer.gif" width="14" height="269">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="14" height="269">
             </td>
             <td class="blockwrap textcenter w380 imagen">
-              <img src="img/prueba.jpg" alt="img-principal" />
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/c81eb94a-15ae-4fdd-aab9-1e59f3b299e9.jpg" alt="img-principal" />
             </td>
-            <td class="blockwrap w380">
-              <img src="img/spacer.gif" width="26" height="269" class="espacio">
+            <td class="w380 hide">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="26" height="269">
+            </td>
+            <td class="blockwrap w380 hideDesktop">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="26" height="20">
             </td>
             <td class="blockwrap w380">
               <table width="230" height="225" cellpadding="0" cellspacing="0" cellmargin="0" align="center">
                 <tr>
                   <td>
                     <span class="color" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
-                    <span class="seccion" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;">Judicial</span>
+                    <span class="seccion" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; color: #333333;">Judicial</span>
                   </td>
                 </tr>
                  <tr>
                   <td>
-                     <img src="img/spacer.gif" height="15">
+                     <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="title" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
+                    <span class="title" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #333333;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                     <img src="img/spacer.gif" height="15">
+                     <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="texto" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 18px;">
+                    <span class="texto" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 18px; color: #333333;">
                       En una acera de Nueva Jersey, Estados Unidos, una mujer que camina tranquilamente por la calle Somerset en Plainfield
                     </span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                     <img src="img/spacer.gif" height="20">
+                     <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="20">
                   </td>
                 </tr>
                 <tr>
@@ -183,8 +188,11 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                 </tr>
               </table>
             </td>
-            <td class="blockwrap w380">
-              <img src="img/spacer.gif" width="24" height="269" class="espacio">
+            <td class="w380 hide">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="24" height="269">
+            </td>
+            <td class="blockwrap w380 hideDesktop">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="26" height="20">
             </td>
           </tr>
         </table>
@@ -194,7 +202,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
-              <img src="img/spacer.gif" height="23">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="23">
             </td>
           </tr>
         </table>
@@ -209,7 +217,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
               </div>
             </td>
             <td class="blockwrap">
-              <img src="img/spacer.gif" width="10">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="10">
             </td>
             <td class="w380 blockwrap textcenter">
               <div class="pauta">
@@ -224,7 +232,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
-              <img src="img/spacer.gif" height="25">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="25">
             </td>
           </tr>
         </table>
@@ -238,12 +246,12 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
               <table border="0" align="center" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
                 <tr>
                   <td class="textcenter w380 imagen-0">
-                    <img src="img/pruebaNota.jpg" alt="img-nota" />
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/e3c95e54-7d30-4ff4-b111-75fbdac76add.jpg" alt="img-nota" />
                   </td>
                 </tr>
                 <tr>
                   <td class="w380">
-                    <img src="img/spacer.gif" width="268" height="8">
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="268" height="8">
                   </td>
                 </tr>
                 <tr>
@@ -251,41 +259,41 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                     <table width="268" align="center" class="blockwrap w320" border="0" cellpadding="0" cellspacing="0"  cellmargin="0" bgcolor="#ffffff">
                       <tr>
                         <!-- <td class="hide">
-                          <img src="img/spacer.gif" width="20">
+                          <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="20">
                         </td> -->
                         <td class="blockwrap w320">
                           <table width="230" align="center" border="0" cellpadding="0" cellspacing="0" class="blockwrap w320" cellmargin="0">
                             <tr>
                               <td class="blockwrap w320">
                                 <span class="color-0" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
-                                <span class="seccion-0" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;">Judicial</span>
+                                <span class="seccion-0" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; color: #333333;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                 <img src="img/spacer.gif" height="15">
+                                 <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
                               <td class="blockwrap w320">
-                                <span class="title-0" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
+                                <span class="title-0" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #333333;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                 <img src="img/spacer.gif" height="15">
+                                 <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
                               <td class="blockwrap w320">
-                                <span class="texto-0" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 18px;">
+                                <span class="texto-0" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 18px; color: #333333;">
                                   En una acera de Nueva Jersey, Estados Unidos, una mujer que camina tranquilamente por la calle Somerset en Plainfield
                                 </span>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                <img src="img/spacer.gif" height="15">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
@@ -295,7 +303,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                             </tr>
                             <tr>
                               <td class="w380">
-                                <img src="img/spacer.gif" height="30">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="30">
                               </td>
                             </tr>
                           </table>
@@ -309,7 +317,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
             <!-- Fin left -->
 
             <td class="w380 blockwrap">
-              <img src="img/spacer.gif" width="20">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="20">
             </td>
 
             <!-- Inicio right -->
@@ -317,12 +325,12 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
               <table border="0" align="center" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
                 <tr>
                   <td class="textcenter w380 imagen-1">
-                    <img src="img/pruebaNota.jpg" alt="img-nota" />
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/e3c95e54-7d30-4ff4-b111-75fbdac76add.jpg" alt="img-nota" />
                   </td>
                 </tr>
                 <tr>
                   <td class="w380">
-                    <img src="img/spacer.gif" width="268" height="8">
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="268" height="8">
                   </td>
                 </tr>
                 <tr>
@@ -330,41 +338,41 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                     <table width="268" align="center" border="0" cellpadding="0" cellspacing="0" class="w320" cellmargin="0" bgcolor="#ffffff">
                       <tr>
                         <!-- <td class="hide">
-                          <img src="img/spacer.gif" width="20">
+                          <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="20">
                         </td> -->
                         <td>
                           <table width="230" align="center" border="0" cellpadding="0" cellspacing="0" class="w320" cellmargin="0">
                             <tr>
                               <td class="w320">
                                 <span class="color-1" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
-                                <span class="seccion-1" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;">Judicial</span>
+                                <span class="seccion-1" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; color: #333333;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                 <img src="img/spacer.gif" height="15">
+                                 <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
                               <td class="w320">
-                                <span class="title-1" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
+                                <span class="title-1" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #333333;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                 <img src="img/spacer.gif" height="15">
+                                 <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
                               <td class="w320">
-                                <span class="texto-1">
+                                <span class="texto-1" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 18px; color: #333333;">
                                   En una acera de Nueva Jersey, Estados Unidos, una mujer que camina tranquilamente por la calle Somerset en Plainfield
                                 </span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                <img src="img/spacer.gif" height="15">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
@@ -374,7 +382,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                             </tr>
                             <tr>
                               <td class="w380">
-                                <img src="img/spacer.gif" height="30">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="30">
                               </td>
                             </tr>
                           </table>
@@ -394,7 +402,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
-              <img src="img/spacer.gif" height="25">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="25">
             </td>
           </tr>
         </table>
@@ -408,12 +416,12 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
               <table border="0" align="center" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
                 <tr>
                   <td class="textcenter w380 imagen-0">
-                    <img src="img/pruebaNota.jpg" alt="img-nota" />
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/e3c95e54-7d30-4ff4-b111-75fbdac76add.jpg" alt="img-nota" />
                   </td>
                 </tr>
                 <tr>
                   <td class="w380">
-                    <img src="img/spacer.gif" width="268" height="8">
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="268" height="8">
                   </td>
                 </tr>
                 <tr>
@@ -421,41 +429,41 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                     <table width="268" align="center" class="blockwrap w320" border="0" cellpadding="0" cellspacing="0"  cellmargin="0" bgcolor="#ffffff">
                       <tr>
                        <!--  <td class="hide">
-                          <img src="img/spacer.gif" width="20">
+                          <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="20">
                         </td> -->
                         <td class="blockwrap w320">
                           <table width="230" align="center" border="0" cellpadding="0" cellspacing="0" class="blockwrap w320" cellmargin="0">
                             <tr>
                               <td class="blockwrap w320">
                                 <span class="color-0" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
-                                <span class="seccion-0" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;">Judicial</span>
+                                <span class="seccion-0" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; color: #333333;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                 <img src="img/spacer.gif" height="15">
+                                 <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
                               <td class="blockwrap w320">
-                                <span class="title-0" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
+                                <span class="title-0" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #333333;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                 <img src="img/spacer.gif" height="15">
+                                 <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
                               <td class="blockwrap w320">
-                                <span class="texto-0" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 18px;">
+                                <span class="texto-0" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 18px; color: #333333;">
                                   En una acera de Nueva Jersey, Estados Unidos, una mujer que camina tranquilamente por la calle Somerset en Plainfield
                                 </span>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                <img src="img/spacer.gif" height="15">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
@@ -465,7 +473,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                             </tr>
                             <tr>
                               <td class="w380">
-                                <img src="img/spacer.gif" height="30">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="30">
                               </td>
                             </tr>
                           </table>
@@ -479,7 +487,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
             <!-- Fin left -->
 
             <td class="w380 blockwrap">
-              <img src="img/spacer.gif" width="20">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="20">
             </td>
 
             <!-- Inicio right -->
@@ -487,12 +495,12 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
               <table border="0" align="center" cellpadding="0" cellspacing="0" class="w380" cellmargin="0" bgcolor="#ffffff">
                 <tr>
                   <td class="textcenter w380 imagen-1">
-                    <img src="img/pruebaNota.jpg" alt="img-nota" />
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/e3c95e54-7d30-4ff4-b111-75fbdac76add.jpg" alt="img-nota" />
                   </td>
                 </tr>
                 <tr>
                   <td class="w380">
-                    <img src="img/spacer.gif" width="268" height="8">
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="268" height="8">
                   </td>
                 </tr>
                 <tr>
@@ -500,41 +508,41 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                     <table width="268" align="center" border="0" cellpadding="0" cellspacing="0" class="w320" cellmargin="0" bgcolor="#ffffff">
                       <tr>
                         <!-- <td class="hide">
-                          <img src="img/spacer.gif" width="20">
+                          <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="20">
                         </td> -->
                         <td>
                           <table width="230" align="center" border="0" cellpadding="0" cellspacing="0" class="w320" cellmargin="0">
                             <tr>
                               <td class="w320">
                                 <span class="color-1" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
-                                <span class="seccion-1" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;">Judicial</span>
+                                <span class="seccion-1" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; color: #333333;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                 <img src="img/spacer.gif" height="15">
+                                 <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
                               <td class="w320">
-                                <span class="title-1" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
+                                <span class="title-1" style="font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #333333;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                 <img src="img/spacer.gif" height="15">
+                                 <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
                               <td class="w320">
-                                <span class="texto-1" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 18px;">
+                                <span class="texto-1" style="font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 18px; color: #333333;">
                                   En una acera de Nueva Jersey, Estados Unidos, una mujer que camina tranquilamente por la calle Somerset en Plainfield
                                 </span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w380">
-                                <img src="img/spacer.gif" height="15">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="15">
                               </td>
                             </tr>
                             <tr>
@@ -544,7 +552,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
                             </tr>
                             <tr>
                               <td class="w380">
-                                <img src="img/spacer.gif" height="30">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="30">
                               </td>
                             </tr>
                           </table>
@@ -564,56 +572,61 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
-              <img src="img/spacer.gif" height="25">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="25">
             </td>
           </tr>
         </table>
         <!-- Fin espacio -->
 
         <!-- Notas Galeria -->
-        <table id="notasViral" width="553" align="center" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
+        <table id="notasViral" width="553" align="center" border="0" cellpadding="0" cellspacing="0" class="w265 blockwrap textcenter" cellmargin="0">
           <tr>
             <!-- Inicio left -->
-            <td align="center" class="blockwrap w265 fondo-0" width="265" height="345" align="left" style="background: url(img/pruebaGaleria.jpg) no-repeat; position: relative;">
+            <td align="center" class="blockwrap w265" width="265" valign="top">
               <div class="imagen-0" style="display: none;"></div>
               <div class="imagen-1" style="display: none;"></div>
-              <table align="center" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0" style="position: relative;">
                 <tr>
-                  <td>
-                    <div class="logo-0" style="position: absolute;position: absolute;top: 100px;left: 0;right: 0;width: 63px; margin: 0 auto;">
-                      <img src="img/video.png" alt="video" />
-                    </div>
+                  <td class="fondo-0">
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/57e6cccd-5b4e-46a1-8174-1ede3d9b50ad.jpg" alt="fondo" />
                   </td>
                 </tr>
+                <!-- <tr>
+                  <td>
+                    <div class="logo-0" style="position: absolute; top: 100px; left: 0; right: 0; width: 63px; margin: 0 auto;">
+                      <img style="position: absolute;top: 100px;left: 0;right: 0;width: 63px; margin: 0 auto;" src="img/video.png" alt="video" />
+                    </div>
+                  </td>
+                </tr> -->
 
                 <tr>
-                  <td class="w265">
-                    <table class="w265" align="center" width="265" height="90" border="0" cellpadding="0" cellspacing="0" cellmargin="0" style="position: absolute; bottom: 0; left: 0; -webkit-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); -moz-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75);">
+                  <td class="w265 blockwrap">
+                    <table class="w265 blockwrap" align="center" width="265" border="0" cellpadding="0" cellspacing="0" cellmargin="0" style="background: #333333;">
                       <tr>
                         <td class="hide">
-                          <img src="img/spacer.gif" width="20">
+                          <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="20">
                         </td>
-                        <td class="w265">
-                          <table align="center" width="230" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
+                        <td class="w265 blockwrap">
+                          <table align="center" width="230" border="0" cellpadding="0" cellspacing="0" class="w265 blockwrap" cellmargin="0">
                             <tr>
-                              <td class="w265">
+                              <td class="w265 padding">
                                 <span class="color-0" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
                                 <span class="seccion-0" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
-                              <td class="w265">
-                                <img src="img/spacer.gif" height="8">
+                              <td class="w265 blockwrap">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="8">
                               </td>
                             </tr>
                             <tr>
-                              <td class="w265">
+                              <td class="w265 padding blockwrap">
                                 <span class="title-0" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #ffffff;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
-                              <td class="w265">
-                                <img src="img/spacer.gif" height="20">
+                              <td class="w265 blockwrap">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="20">
                               </td>
                             </tr>
                           </table>
@@ -627,48 +640,54 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
             <!-- Fin left -->
 
             <td class="blockwrap w265">
-              <img src="img/spacer.gif" width="20">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="20">
             </td>
 
              <!-- Inicio Right -->
-            <td align="center" class="blockwrap w265 fondo-1" width="265" height="345" align="left" style="background: url(img/pruebaGaleria.jpg) no-repeat; position: relative;">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
+            <td align="center" class="blockwrap w265" width="265" valign="top">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0" style="position: relative;">
                 <tr>
-                  <td>
-                    <div class="logo-1" style="position: absolute;position: absolute;top: 100px;left: 0;right: 0;width: 63px; margin: 0 auto;">
-                      <img src="img/video.png" alt="video" />
-                    </div>
+                  <td class="fondo-1">
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/57e6cccd-5b4e-46a1-8174-1ede3d9b50ad.jpg" alt="fondo" />
                   </td>
                 </tr>
 
+                <!-- <tr>
+                  <td>
+                    <div class="logo-1" style="position: absolute;top: 100px;left: 0;right: 0;width: 63px; margin: 0 auto;">
+                      <img style="position: absolute;top: 100px;left: 0;right: 0;width: 63px; margin: 0 auto;" src="img/video.png" alt="video" />
+                    </div>
+                  </td>
+                </tr> -->
+
                 <tr>
-                  <td class="w265">
-                    <table class="w265" align="center" width="265" height="90" border="0" cellpadding="0" cellspacing="0" cellmargin="0" style="position: absolute; bottom: 0; left: 0; -webkit-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); -moz-box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75); box-shadow: inset 0px -79px 95px -38px rgba(0,0,0,0.75);">
+                  <td class="w265 blockwrap">
+                    <table class="w265 blockwrap" align="center" width="265" height="90" border="0" cellpadding="0" cellspacing="0" cellmargin="0" style="background: #333333;">
                       <tr>
                         <td class="hide">
-                          <img src="img/spacer.gif" width="20">
+                          <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="20">
                         </td>
-                        <td class="w265">
-                          <table align="center" width="230" border="0" cellpadding="0" cellspacing="0" class="w265" cellmargin="0">
+                        <td class="w265 blockwrap">
+                          <table align="center" width="230" border="0" cellpadding="0" cellspacing="0" class="w265 blockwrap" cellmargin="0">
                             <tr>
-                              <td class="w265">
+                              <td class="w265 padding">
                                 <span class="color-1" style="width: 36px; height: 13px; display: inline-block; background: #c16822;"></span>
                                 <span class="seccion-1" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">Judicial</span>
                               </td>
                             </tr>
                             <tr>
-                              <td class="w265">
-                                <img src="img/spacer.gif" height="8">
+                              <td class="w265 blockwrap">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="8">
                               </td>
                             </tr>
                             <tr>
-                              <td class="w265">
+                              <td class="w265 padding blockwrap">
                                 <span class="title-1" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 20px; color: #ffffff;">Destruidos dos explosivos instalados en camino veredal de Tibú</span>
                               </td>
                             </tr>
                             <tr>
                               <td class="w265">
-                                <img src="img/spacer.gif" height="20">
+                                <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="20">
                               </td>
                             </tr>
                           </table>
@@ -688,7 +707,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
-              <img src="img/spacer.gif" height="23">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="23">
             </td>
           </tr>
         </table>
@@ -703,7 +722,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
               </div>
             </td>
             <td class="blockwrap">
-              <img src="img/spacer.gif" width="10">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="10">
             </td>
             <td class="w380 blockwrap textcenter">
               <div class="pauta">
@@ -718,7 +737,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" border="0" cellpadding="0" cellspacing="0" class="w380" cellmargin="0">
           <tr>
             <td class="w380">
-              <img src="img/spacer.gif" height="25">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="25">
             </td>
           </tr>
         </table>
@@ -728,73 +747,113 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
         <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" class="w100" cellmargin="0" bgcolor="#262626">
           <tr>
             <td>
-              <img src="img/spacer.gif" height="30">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="30">
             </td>
           </tr>
           <tr>
             <td class="hide">
-              <img src="img/spacer.gif" width="110">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" width="110">
             </td>
-            <td class="blockwrap w380 margin textcenter" align="center">
+            <td class="blockwrap textcenter" align="center">
               <table width="325" class="w380" align="center">
                 <tr>
                   <td>
-                    <a href="https://www.laopinion.com.co" target="_blank">
-                      <img src="img/logoFooter.png" alt="logo-footer" />
+                    <a href="https://www.laopinion.com.co">
+                      <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/bacf468e-04a8-4f15-9988-6cbc03a068ca.png" alt="logo-footer" />
                     </a>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img src="img/spacer.gif" height="20">
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="20">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blockwrap">
+                    <table border="0" cellpadding="0" cellspacing="0" class="w100" cellmargin="0" style="font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">
+                      <tr>
+                        <td>Copyright 2001-2017</td>
+                      </tr>
+                      <tr>
+                        <td>La Opinión SA</td>
+                      </tr>
+                      <tr>
+                        <td>Avenida 4 Nro 16-12</td>
+                      </tr>
+                      <tr>
+                        <td>Teléfono: (+57)(7)582 99 99</td>
+                      </tr>
+                      <tr>
+                        <td>Fax: (57)(7)583 15 02</td>
+                      </tr>
+                      <tr>
+                        <td>Cúcuta - Colombia</td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span style="font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">
-                      Copyright   2001-2017 <br />
-                      La Opinión S.A. <br />
-                      Av. 4 Nro. 16-12. <br />
-                      Teléfono: (+57)(7)582.99.99 <br />
-                      Fax: (57)(7)583.15.02 <br />
-                      Cúcuta - Colombia <br /> 
-                    </span>
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="20">
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img src="img/spacer.gif" height="20">
+                    <table align="center">
+                      <tr>
+                        <td>
+                          <span class="textcenter">
+                            <a href="*|UNSUB|*" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff; font-weight: 700; border-bottom: 1px solid #d71a21; padding-bottom: 5px;">Dejar de recibir este correo</a>
+                          </span>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <a href="*|UNSUB|*" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff; font-weight: 700; border-bottom: 1px solid #d71a21; padding-bottom: 5px;">Dejar de recibir este correo</a>
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="18">
                   </td>
                 </tr>
               </table>
             </td>
 
-            <td class="blockwrap w265 margin" align="center">
-              <table class="w265" width="325" align="left">
+            <td class="blockwrap" align="center">
+              <table class="w265" width="325" align="center">
                 <tr>
                   <td width="40">
-                    <img src="img/redes.png" alt="redes" />
+                    <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/4b01b309-5f62-4923-8df4-2b0e6e3a628b.png" alt="redes" />
                   </td>
                   <td>
-                    <ul style="list-style: none; padding: 0;">
-                      <li style="margin-bottom: 18px">
-                        <a href="https://www.facebook.com/laopinioncucuta/" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">laopinioncucuta</a>
-                      </li>
-                      <li style="margin-bottom: 18px">
-                        <a href="https://www.twitter.com/laopinioncucuta/" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">@laopinioncucuta</a>
-                      </li>
-                      <li style="margin-bottom: 18px">
-                        <a href="https://www.instagram.com/laopinioncucuta/" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">@laopinioncucuta</a>
-                      </li>
-                      <li style="margin-bottom: 18px">
-                        <a href="https://www.youtube.com/user/WEBLAOPINION" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">laopinioncucuta</a>
-                      </li>
-                    </ul>
+                    <table border="0" cellpadding="0" cellspacing="0" class="w100" cellmargin="0">
+                      <tr>
+                        <td><a href="https://www.facebook.com/laopinioncucuta/" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">laopinioncucuta</a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="18">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://www.twitter.com/laopinioncucuta/" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">@laopinioncucuta</a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="18">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://www.instagram.com/laopinioncucuta/" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">@laopinioncucuta</a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="18">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://www.youtube.com/user/WEBLAOPINION" style="text-decoration: none; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ffffff;">laopinioncucuta</a></td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
@@ -802,11 +861,10 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
           </tr>
           <tr>
             <td>
-              <img src="img/spacer.gif" height="30">
+              <img src="https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/5ccfe4e9-6c81-47a4-990c-864ba2084899.gif" height="30">
             </td>
           </tr>
         </table>
-
       </td>
     </tr>
   </table>
@@ -966,9 +1024,10 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
           let bodyP = `#notasViral .texto-${index} p`;
           let verNoticia = `#notasViral .verNoticia-${index} a`;
           let img = `#notasViral .imagen-${index}`;
-          let fondo = `#notasViral .fondo-${index}`;
+          let fondo = `#notasViral .fondo-${index} img`;
           let section = `#notasViral .seccion-${index}`;
-          let sectionColor = `#notasViral .color-${index}`;
+          let sectionColor = `#notasViral .color-${index}`;          
+          let logo = `#notasViral .logo-${index} img`;
 
           $(title).html(element.node_title);
           $(titleHref).css({ 'text-decoration': 'none', 'color': '#ffffff'});
@@ -983,16 +1042,17 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
           if (element.tipo == 'Video') {
             $(img).html(element.imagenvideo);
             let rutaImg = $(`${img} img`).attr('src');
-            $(fondo).css({ 'background': `url(${rutaImg})` })
+            $(fondo).attr('src', rutaImg);
+            $(logo).attr('src', 'https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/bc1f1180-b81e-4dfa-b242-194f009a197f.png')
           } else {
             $(img).html(element.imagengaleria);
             let rutaImg = $(`${img} img`).attr('src');
-            $(fondo).css({ 'background': `url(${rutaImg})` })
+            $(fondo).attr('src', rutaImg);
+            $(logo).attr('src', 'https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/bd5a532d-ca7d-4b26-8881-05bd350cb175.png')
           }
         });
       }
     });
-
 
   </script>
 
