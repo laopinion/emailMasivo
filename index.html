@@ -1115,11 +1115,16 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
 
           $(section).html(element.section);
           $(sectionColor).css('background', colorSection(element.section));
+
           if (element.tipo == 'Video') {
             $(img).html(element.imagenvideo);
             let rutaImg = $(`${img} img`).attr('src');
             $(fondo).attr('src', rutaImg);
             $(logo).attr('src', 'https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/bc1f1180-b81e-4dfa-b242-194f009a197f.png')
+          } else if (element.tipo == 'Artículo') {
+            $(img).html(element.imagen);
+            let rutaImg = $(`${img} img`).attr('src');
+            $(fondo).attr('src', rutaImg);
           } else {
             $(img).html(element.imagengaleria);
             let rutaImg = $(`${img} img`).attr('src');
