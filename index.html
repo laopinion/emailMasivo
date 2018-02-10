@@ -985,7 +985,13 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
           $(section).html(element.section);
           $(sectionColor).css('background', colorSection(element.section));
 
-          $(img).html(element.imagen);
+          if (element.tipo == 'Video') {
+            $(img).html(element.imagenvideo);
+          } else if (element.tipo == 'Artículo') {
+            $(img).html(element.imagen);
+          } else {
+            $(img).html(element.imagengaleria);
+          }
         });
       }
     });
@@ -1019,7 +1025,14 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
           $(section).html(element.section);
           $(sectionColor).css('background', colorSection(element.section));
 
-          $(img).html(element.imagen);
+          // $(img).html(element.imagen);
+          if (element.tipo == 'Video') {
+            $(img).html(element.imagenvideo);
+          } else if (element.tipo == 'Artículo') {
+            $(img).html(element.imagen);
+          } else {
+            $(img).html(element.imagengaleria);
+          }
         });
       }
     });
@@ -1053,7 +1066,14 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
           $(section).html(element.section);
           $(sectionColor).css('background', colorSection(element.section));
 
-          $(img).html(element.imagen);
+          // $(img).html(element.imagen);
+          if (element.tipo == 'Video') {
+            $(img).html(element.imagenvideo);
+          } else if (element.tipo == 'Artículo') {
+            $(img).html(element.imagen);
+          } else {
+            $(img).html(element.imagengaleria);
+          }
         });
       }
     });
