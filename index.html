@@ -937,7 +937,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
     const urlService4 = 'https://laopinion.com.co/api/views/mailchimp?display_id=services_3';
 
     function colorSection(name) {
-      if (name == 'Viral' || name == 'Entretenimiento') {
+      if (name == 'Viral' || name == 'Entretenimiento' || name == 'Actividad social' || name == 'Tecnología' || name == 'Cultura' || name == 'Vida y salud' || name == 'Zona verde') {
         return '#8B7AB5';
       } else if (name == 'Judicial') {
         return '#F87917';
@@ -1120,7 +1120,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
             $(img).html(element.imagenvideo);
             let rutaImg = $(`${img} img`).attr('src');
             $(fondo).attr('src', rutaImg);
-            $(logo).attr('src', 'https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/bc1f1180-b81e-4dfa-b242-194f009a197f.png')
+            // $(logo).attr('src', 'https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/bc1f1180-b81e-4dfa-b242-194f009a197f.png')
           } else if (element.tipo == 'Artículo') {
             $(img).html(element.imagen);
             let rutaImg = $(`${img} img`).attr('src');
@@ -1129,7 +1129,7 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
             $(img).html(element.imagengaleria);
             let rutaImg = $(`${img} img`).attr('src');
             $(fondo).attr('src', rutaImg);
-            $(logo).attr('src', 'https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/bd5a532d-ca7d-4b26-8881-05bd350cb175.png')
+            // $(logo).attr('src', 'https://gallery.mailchimp.com/6e19755e139e76341a0bb29f2/images/bd5a532d-ca7d-4b26-8881-05bd350cb175.png')
           }
         });
       }
